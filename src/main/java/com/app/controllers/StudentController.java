@@ -21,7 +21,7 @@ import com.app.servicesimpl.StudentServiceImpl;
 
 @Controller
 public class StudentController {
-	
+
 	@Autowired
 	private IStudentService serviceInvoke = null;
 	@RequestMapping(value = "/registeruser", method = RequestMethod.POST)
@@ -31,6 +31,7 @@ public class StudentController {
 		//userDao.studentRegistration(std);
 		//model.addAttribute("succMsg", "You are successfully registered,Please login");
 		//model.addAttribute("username", std.getEmail());
+		System.out.println("register entered");
 		return stdReg;
 	}
 	
