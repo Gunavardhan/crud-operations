@@ -51,6 +51,7 @@ public class StudentController {
 	@RequestMapping(value="/deletemultiple")
 	public String deleteMultipleRecords(Model model, @RequestParam("checkDeleteAll") List<String> checkDeleteAll){
 		System.out.println("This Method for Delete Multiple Records :: Guna");
+		System.out.println("this method for sagar..........");
 		//StudentServiceImpl deleteMultipleService = new StudentServiceImpl();
 		String deleteMultipleRecords = serviceInvoke.deleteMultipleRecords(model, checkDeleteAll);
 		return deleteMultipleRecords;
