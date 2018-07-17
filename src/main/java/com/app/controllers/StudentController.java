@@ -67,6 +67,7 @@ public class StudentController {
 	
 	@RequestMapping(value="/updateStudent")
 	public String updateStudent(Student std, @RequestParam("email") String email,Model model){
+		System.out.println("Guna updating student");
 		//StudentServiceImpl updateStudentService = new StudentServiceImpl();
 		String updateStudent = serviceInvoke.updateStudent(std, email, model);
 		return updateStudent;
