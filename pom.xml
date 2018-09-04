@@ -1,13 +1,15 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.myapp.resuse</groupId>
-  <artifactId>springmvc-layering</artifactId>
-  <version>1</version>
-  <packaging>war</packaging>
-  <properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.myapp.resuse</groupId>
+	<artifactId>springmvc-layering</artifactId>
+	<version>1</version>
+	<packaging>war</packaging>
+	<properties>
 		<spring.version>4.3.2.RELEASE</spring.version>
 		<servlet.version>3.1.0</servlet.version>
 		<mysql.connector.version>5.1.9</mysql.connector.version>
+		<spring.security.version>3.2.3.RELEASE</spring.security.version>
 	</properties>
 	<dependencies>
 		<!--Servlet-Api -->
@@ -49,14 +51,34 @@
 			<version>${mysql.connector.version}</version>
 		</dependency>
 		<dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-api</artifactId>
-    <version>2.11.0</version>
-  </dependency>
-  <dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-core</artifactId>
-    <version>2.11.0</version>
-  </dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+		<!-- <dependency> <groupId>com.jdbc.jar</groupId> <artifactId>jdbc-jar</artifactId> 
+			<version>1</version> </dependency> -->
+		<dependency>
+			<groupId>com.hibernate.jar</groupId>
+			<artifactId>hibernate-jar</artifactId>
+			<version>1</version>
+		</dependency>
+		<!-- Spring Security -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+
 	</dependencies>
 </project>

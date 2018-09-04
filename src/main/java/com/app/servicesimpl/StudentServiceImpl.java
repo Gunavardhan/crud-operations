@@ -18,7 +18,7 @@ import com.app.service.IStudentService;
 
 public class StudentServiceImpl implements IStudentService {
 	
-	private static final Logger logger = LogManager.getLogger();
+	private static final Logger logger = LogManager.getLogger(StudentServiceImpl.class);
 	@Autowired
 	private IUserDao stdDao = null;
 	
